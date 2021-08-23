@@ -22,14 +22,14 @@
 <img src="https://miro.medium.com/max/16000/1*CMGFtehu01ZEBgzHG71sMg.png" alt="Types of tree data structure" />
 </p>
 
-1. Full Binary Tree
+#### 1. Full Binary Tree
 - Every node in this tree will either have 0 or 2 children
 - Example of Full Binary Tree
 <p>
 <img src="https://web.cecs.pdx.edu/~sheard/course/Cs163/Graphics/FullBinary.jpg" alt="Full Binary Tree data structure" />
 </p>
 
-2. Complete Binary Tree
+#### 2. Complete Binary Tree
 - All levels are completely filled except the last level
 - The last level has all nodes as left as possible
 - Example of Complete Binary Tree
@@ -37,7 +37,7 @@
 <img src="https://www.techiedelight.com/wp-content/uploads/Complete-Binary-Tree.png" alt="Complete Binary Tree data structure" />
 </p>
 
-3. Perfect Binary Tree
+#### 3. Perfect Binary Tree
 - All leaf are at the same level
 - Examples of Perfect Binary Tree
 <p>
@@ -50,7 +50,7 @@
 <img src="https://codepumpkin.com/wp-content/uploads/2018/08/Perfect_Binary_Tree.jpg" alt="Perfect Binary Tree data structure" />
 </p>
 
-4. Balanced Binary Tree
+#### 4. Balanced Binary Tree
 - The height of the tree should be at maximum of Log(N), where N is no. of nodes
 - Examples of Balanced Binary Tree
 <p>
@@ -60,7 +60,7 @@
 <img src="https://i.stack.imgur.com/n2CFS.png" alt="Balanced Binary Tree data structure" />
 </p>
 
-5. Degenerate/ Skewed Binary Tree
+#### 5. Degenerate/ Skewed Binary Tree
 - A binary tree, which is dominated solely by left child nodes or right child nodes, is called a skewed binary tree, more specifically left skewed binary tree, or right skewed binary tree.
 - Examples of Degenerate/ Skewed Binary Tree
 <p>
@@ -72,6 +72,34 @@
 <hr />
 <p>
 <img src="https://d2uusema5elisf.cloudfront.net/books/javascript-algorithms/images/06-binary-search-tree/binary-tree-types.png" alt="Binary Tree data structure" />
+</p>
+<hr />
+
+
+## Traversal Techniques (BFS | DFS)
+
+- Depth-first search (DFS) - Inorder Traversal, Preorder Traversal, Postorder Traversal 
+
+### Inorder Traversal 
+- Left - Root - Right 
+
+### Preorder Traversal 
+- Root - Left - Right 
+
+### Postorder Traversal 
+- Left - Right - Root 
+
+<hr />
+<p>
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Preorder-from-Inorder-and-Postorder-traversals.jpg" alt="Traversal Techniques" />
+</p>
+<hr />
+
+- Breadth-first Search (BFS) - Level Order Traversal 
+
+<hr />
+<p>
+<img src="https://examradar.com/wp-content/uploads/2016/10/pre-post-inorder-and-level-order.png" alt="Traversal Techniques" />
 </p>
 <hr />
 
