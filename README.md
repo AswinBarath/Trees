@@ -103,3 +103,19 @@
 </p>
 <hr />
 
+
+## Pre-order traversal
+
+- Pre-order traversal follows a depth-first search appraoch
+- We visit the nodes in this format **(Root - Left - Right)**
+- Java Code
+```
+	public static void preorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		System.out.print(root.data + " ");
+		preorder_traversal(root.left);
+		preorder_traversal(root.right);
+	}
+```
