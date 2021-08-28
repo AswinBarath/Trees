@@ -108,7 +108,7 @@
 
 - Pre-order traversal follows a depth-first search appraoch
 - We visit the nodes in this format **(Root - Left - Right)**
-- Java Code
+- Java Code (Recursive)
 ```
 	public static void preorder_traversal(Node root) {
 		if (root == null)
@@ -119,3 +119,40 @@
 		preorder_traversal(root.right);
 	}
 ```
+<hr />
+
+
+## In-order traversal
+
+- In-order traversal follows a depth-first search appraoch
+- We visit the nodes in this format **(Left - Root - Right)**
+- Java Code (Recursive)
+```
+	public static void inorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		inorder_traversal(root.left);
+		System.out.print(root.data + " ");
+		inorder_traversal(root.right);
+	}
+```
+<hr />
+
+
+## Post-order traversal
+
+- Post-order traversal follows a depth-first search appraoch
+- We visit the nodes in this format **(Left - Right - Root)**
+- Java Code (Recursive)
+```
+	public static void postorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		postorder_traversal(root.left);
+		postorder_traversal(root.right);
+		System.out.print(root.data + " ");
+	}
+```
+<hr />

@@ -1,20 +1,20 @@
 package traversals;
 
-//Time Complexity: O(N)
-//Space Complexity: O(N)
+// Time Complexity: O(N)
+// Space Complexity: O(N)
 //- In worst case, the tree is skewed (Vertical linked list)
-//- Auxiliary space used in Recursion
+// - Auxiliary space used in Recursion
 
-public class Inorder_traversal {
+public class Postorder_traversal {
 
-	// Left - Root - Right
-	public static void inorder_traversal(Node root) {
+	// Left - Right - Root
+	public static void postorder_traversal(Node root) {
 		if (root == null)
 			return;
 
-		inorder_traversal(root.left);
+		postorder_traversal(root.left);
+		postorder_traversal(root.right);
 		System.out.print(root.data + " ");
-		inorder_traversal(root.right);
 	}
 
 	public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class Inorder_traversal {
 		root.right.right = new Node(8);
 		root.right.right.left = new Node(9);
 		root.right.right.right = new Node(10);
-		inorder_traversal(root); // 4 2 6 5 1 7 3 9 8 10
+		postorder_traversal(root); // 4 6 5 2 7 9 10 8 3 1
 	}
 
 }
