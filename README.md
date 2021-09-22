@@ -4,11 +4,37 @@
 - A hierarchy can be observed in our folder structure
 
 
-## Key terminologies
+
+
+## Types of Trees
+
+1. Generic Tree
+2. Binary Tree
+3. [Binary Search Tree](https://www.programiz.com/dsa/binary-search-tree)
+4. [AVL Tree](https://www.programiz.com/dsa/avl-tree)
+5. [Red-Black Tree](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)
+6. [N-ary Tree](https://www.studytonight.com/advanced-data-structures/nary-tree#:~:text=The%20N%2Dary%20tree%20is,children%20of%20a%20particular%20node.)
+7. [Segment Tree](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
+8. [B-tree](https://www.programiz.com/dsa/b-tree)
+
+
+---
+
+
+## 1. Generic Tree
+
+- A generic tree is a tree which any node can have any number of children
+
+
+### Key terminologies of a tree
 
 <p>
 <img src="https://miro.medium.com/max/975/1*PWJiwTxRdQy8A_Y0hAv5Eg.png" alt="Tree data structure" />
 </p>
+
+
+
+---
 
 
 ## Introduction to Binary Trees
