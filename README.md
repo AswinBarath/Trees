@@ -8,7 +8,7 @@ Problems based on the Tree data structure
 
 ### Day 17 Binary Tree
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -19,7 +19,7 @@ Problems based on the Tree data structure
 
 ### Day 18 Binary Tree [Continued]
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -31,7 +31,7 @@ Problems based on the Tree data structure
 
 ### Day 19 Binary Tree [Continued]
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -41,7 +41,7 @@ Problems based on the Tree data structure
 
 ### Day 20 Binary Search Tree
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -52,7 +52,7 @@ Problems based on the Tree data structure
 
 ### Day 21 Binary Search Tree [Continued]
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Floor and Ceil from a BST](https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -64,7 +64,7 @@ Problems based on the Tree data structure
 
 ### Day 22 Trees [Miscellaneous]
 
-| Completion Status | Problems on Arrays | Explanation | Solution |
+| Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
 | 🔃 | [Binary Tree to DLL](https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1#) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
