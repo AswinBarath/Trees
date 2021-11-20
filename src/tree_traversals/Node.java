@@ -1,4 +1,4 @@
-package traversals;
+package tree_traversals;
 
 class Node {
 

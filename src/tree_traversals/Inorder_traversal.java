@@ -1,4 +1,4 @@
-package traversals;
+package tree_traversals;
 
 //Time Complexity: O(N)
 //Space Complexity: O(N)

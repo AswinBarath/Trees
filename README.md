@@ -80,26 +80,7 @@ Problems based on the Tree data structure
 - Trees are hierarchical data structures, compared with Arrays, Stacks, Queues, Linked lists which are linear data structures
 - A hierarchy can be observed in our folder structure
 
-
-## Types of Trees
-
-1. Generic Tree
-2. Binary Tree
-3. [Binary Search Tree](https://www.programiz.com/dsa/binary-search-tree)
-4. [AVL Tree](https://www.programiz.com/dsa/avl-tree)
-5. [Red-Black Tree](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)
-6. [N-ary Tree](https://www.studytonight.com/advanced-data-structures/nary-tree#:~:text=The%20N%2Dary%20tree%20is,children%20of%20a%20particular%20node.)
-7. [Segment Tree](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
-8. [B-tree](https://www.programiz.com/dsa/b-tree)
-
-
 ---
-
-
-## 1. Generic Tree
-
-- A generic tree is a tree which any node can have any number of children
-
 
 ### Key terminologies of a tree
 
@@ -108,74 +89,18 @@ Problems based on the Tree data structure
 </p>
 
 
-
 ---
-
 
 ## Introduction to Binary Trees
 
-- A node in a binary tree can contain at max only two nodes as children
+- A tree which can contain at max only two nodes as children is a **Binary Tree**
+- Maximum number of nodes at level i is `2^i`
+- Maximum number of nodes in a binary tree with height h is `2^h - 1`
+- *Note: Levels in trees start with number 0 and height starts with 1*
 
+<img src="assets/Binary Tree in Array Implementation.png" alt="Binary Tree in Array Implementation" width="400px" />
 
-### Types of Binary Trees
-
-<p>
-<img src="https://miro.medium.com/max/16000/1*CMGFtehu01ZEBgzHG71sMg.png" alt="Types of tree data structure" />
-</p>
-
-#### 1. Full Binary Tree
-- Every node in this tree will either have 0 or 2 children
-- Example of Full Binary Tree
-<p>
-<img src="https://web.cecs.pdx.edu/~sheard/course/Cs163/Graphics/FullBinary.jpg" alt="Full Binary Tree data structure" />
-</p>
-
-#### 2. Complete Binary Tree
-- All levels are completely filled except the last level
-- The last level has all nodes as left as possible
-- Example of Complete Binary Tree
-<p>
-<img src="https://www.techiedelight.com/wp-content/uploads/Complete-Binary-Tree.png" alt="Complete Binary Tree data structure" />
-</p>
-
-#### 3. Perfect Binary Tree
-- All leaf are at the same level
-- Examples of Perfect Binary Tree
-<p>
-<img src="https://cdn.programiz.com/sites/tutorial2program/files/perfect-binary-tree-rec.png" alt="Perfect Binary Tree data structure" />
-</p>
-<p>
-<img src="https://adrianmejia.com/images/full-complete-perfect-binary-tree.jpg" alt="Perfect Binary Tree data structure" />
-</p>
-<p>
-<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Perfect_Binary_Tree.jpg" alt="Perfect Binary Tree data structure" />
-</p>
-
-#### 4. Balanced Binary Tree
-- The height of the tree should be at maximum of Log(N), where N is no. of nodes
-- Examples of Balanced Binary Tree
-<p>
-<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Balanced_Binary_Tree.jpg" alt="Balanced Binary Tree data structure" />
-</p>
-<p>
-<img src="https://i.stack.imgur.com/n2CFS.png" alt="Balanced Binary Tree data structure" />
-</p>
-
-#### 5. Degenerate/ Skewed Binary Tree
-- A binary tree, which is dominated solely by left child nodes or right child nodes, is called a skewed binary tree, more specifically left skewed binary tree, or right skewed binary tree.
-- Examples of Degenerate/ Skewed Binary Tree
-<p>
-<img src="https://www.gatevidyalay.com/wp-content/uploads/2018/07/Skewed-Binary-Tree-Example.png" alt="Degenerate/ Skewed Binary Tree data structure" />
-</p>
-<p>
-<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Left_Right_Skewed_Tree.jpg" alt="Degenerate/ Skewed Binary Tree data structure" />
-</p>
-<hr />
-<p>
-<img src="https://d2uusema5elisf.cloudfront.net/books/javascript-algorithms/images/06-binary-search-tree/binary-tree-types.png" alt="Binary Tree data structure" />
-</p>
-<hr />
-
+---
 
 ## Traversal Techniques (BFS | DFS)
 
@@ -256,4 +181,85 @@ Problems based on the Tree data structure
 		System.out.print(root.data + " ");
 	}
 ```
+
+---
+
+## Types of Trees
+
+1. Generic Tree
+2. Binary Tree
+3. [Binary Search Tree](https://www.programiz.com/dsa/binary-search-tree)
+4. [AVL Tree](https://www.programiz.com/dsa/avl-tree)
+5. [Red-Black Tree](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)
+6. [N-ary Tree](https://www.studytonight.com/advanced-data-structures/nary-tree#:~:text=The%20N%2Dary%20tree%20is,children%20of%20a%20particular%20node.)
+7. [Segment Tree](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
+8. [B-tree](https://www.programiz.com/dsa/b-tree)
+
+
+---
+
+
+## 1. Generic Tree
+
+- A generic tree is a tree which any node can have any number of children
+
+---
+
+### Types of Binary Trees
+
+<p>
+<img src="https://miro.medium.com/max/16000/1*CMGFtehu01ZEBgzHG71sMg.png" alt="Types of tree data structure" />
+</p>
+
+#### 1. Full Binary Tree
+- Every node in this tree will either have 0 or 2 children
+- Example of Full Binary Tree
+<p>
+<img src="https://web.cecs.pdx.edu/~sheard/course/Cs163/Graphics/FullBinary.jpg" alt="Full Binary Tree data structure" />
+</p>
+
+#### 2. Complete Binary Tree
+- All levels are completely filled except the last level
+- The last level has all nodes as left as possible
+- Example of Complete Binary Tree
+<p>
+<img src="https://www.techiedelight.com/wp-content/uploads/Complete-Binary-Tree.png" alt="Complete Binary Tree data structure" />
+</p>
+
+#### 3. Perfect Binary Tree
+- All leaf are at the same level
+- Examples of Perfect Binary Tree
+<p>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/perfect-binary-tree-rec.png" alt="Perfect Binary Tree data structure" />
+</p>
+<p>
+<img src="https://adrianmejia.com/images/full-complete-perfect-binary-tree.jpg" alt="Perfect Binary Tree data structure" />
+</p>
+<p>
+<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Perfect_Binary_Tree.jpg" alt="Perfect Binary Tree data structure" />
+</p>
+
+#### 4. Balanced Binary Tree
+- The height of the tree should be at maximum of Log(N), where N is no. of nodes
+- Examples of Balanced Binary Tree
+<p>
+<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Balanced_Binary_Tree.jpg" alt="Balanced Binary Tree data structure" />
+</p>
+<p>
+<img src="https://i.stack.imgur.com/n2CFS.png" alt="Balanced Binary Tree data structure" />
+</p>
+
+#### 5. Degenerate/ Skewed Binary Tree
+- A binary tree, which is dominated solely by left child nodes or right child nodes, is called a skewed binary tree, more specifically left skewed binary tree, or right skewed binary tree.
+- Examples of Degenerate/ Skewed Binary Tree
+<p>
+<img src="https://www.gatevidyalay.com/wp-content/uploads/2018/07/Skewed-Binary-Tree-Example.png" alt="Degenerate/ Skewed Binary Tree data structure" />
+</p>
+<p>
+<img src="https://codepumpkin.com/wp-content/uploads/2018/08/Left_Right_Skewed_Tree.jpg" alt="Degenerate/ Skewed Binary Tree data structure" />
+</p>
+<hr />
+<p>
+<img src="https://d2uusema5elisf.cloudfront.net/books/javascript-algorithms/images/06-binary-search-tree/binary-tree-types.png" alt="Binary Tree data structure" />
+</p>
 <hr />

@@ -1,12 +1,12 @@
-package implementation;
+package tree_implementations;
 
-public class Node {
+public class BasicNode {
 
 	int data;
 	Node left;
 	Node right;
 
-	public Node(int key) {
+	public BasicNode(int key) {
 		this.data = key;
 	}
 
