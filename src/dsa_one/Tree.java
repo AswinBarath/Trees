@@ -1,4 +1,4 @@
-package tree_implementations;
+package dsa_one;
 
 import java.util.Scanner;
 
@@ -70,4 +70,13 @@ public class Tree {
 		System.out.print(root.data + " ");
 	}
 
+}
+
+class Node {
+	Node left, right;
+	int data;
+
+	public Node(int data) {
+		this.data = data;
+	}
 }
