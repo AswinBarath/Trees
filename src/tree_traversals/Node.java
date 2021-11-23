@@ -10,4 +10,10 @@ class Node {
 		this.data = key;
 	}
 
+	public Node(int key, Node left, Node right) {
+		this.data = key;
+		this.left = left;
+		this.right = right;
+	}
+
 }

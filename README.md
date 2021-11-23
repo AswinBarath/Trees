@@ -182,6 +182,62 @@ Problems based on the Tree data structure
 	}
 ```
 
+## Level order traversal
+
+- To store a given level, we can use **queue** data structure
+- To store level wise order we can use **List of List** data structure where we store a level in a List and store all lists of levels as a list inside this data structure
+- For every level we visit,
+	- we will first insert it into the queue
+	- next, we take the nodes of current level and check its left and right
+	- If left and right exists, we insert the current level of nodes as list inside the answer data structure 
+	- and insert the left and right we checked into the queue data structure
+	- Repeat until left and right is null
+
+**Dry Run**
+
+<img src="" alt="Level order traversal dry run" />
+
+## Iterative preorder traversal
+
+- We use **root** variable to store current node
+- Use Arraylist **inorder** to store inorder traversal answer
+- And a Stack **stack** to store left and right of current nodes
+- Insert the root node inside stack first
+- Traversal begins
+	- Pop the top most node and store it in **root** variable
+	- Store the value of **root** inside **inorder** list
+	- Using **root**
+		- check if right of **root** exists and push into stack
+		- check if left of **root** exists and push into stack
+	- Continue traversal until stack is empty
+- Return **inorder** list
+
+**Dry Run**
+
+<img src="" alt="Iterative preorder traversal dry run" />
+
+## Iterative inorder traversal
+
+- We use **node** variable to store current node
+- Use Arraylist **inorder** to store inorder traversal answer
+- And a Stack **stack** to simulate the auxiliary stack trace used in recursion
+- Now the traversal begines
+	- *If* **node** is not null, push to stack and go the left of **node**
+	- *Else* check once whether stack is empty
+	- *Then* if **node** is null, do 2 things
+		- Print answer  (or) insert the current **node**'s value to answer
+		- And go to right of **node**
+	- Repeat the traversal steps until the stack is empty
+- Return answer
+
+**Dry Run**
+
+<img src="" alt="Iterative inorder traversal dry run" />
+
+## Iterative postorder traversal
+
+- 
+
 ---
 
 ## Types of Trees
