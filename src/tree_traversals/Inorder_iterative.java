@@ -12,7 +12,6 @@ import tree_implementations.Node;
  * 	where N is the no. of nodes in the tree
  * Space Complexity: O(N)
  * 	where N is the no. of nodes in the tree
- * (when queue stores every node - worst case)
  * (don't take the space of answer DS into account)
  */
 public class Inorder_iterative {

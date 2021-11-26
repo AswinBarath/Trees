@@ -10,9 +10,14 @@ Problems based on the Tree data structure
 
 | Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
-| 🔃 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [Recursive Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Approach](#in-order-traversal) | [Java Soultion](./src/sde_sheet/Inorder_traversal.java) |
+| ✅ | [Recursive Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Approach](#pre-order-traversal) | [Java Soultion](./src/sde_sheet/Preorder_traversal.java) |
+| ✅ | [Recursive Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#post-order-traversal) | [Java Soultion](./src/sde_sheet/Postorder_traversal.java) |
+| ✅ | [Iterative Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [Approach](#iterative-inorder-traversal) | [Java Soultion](./src/sde_sheet/Inorder_iterative.java) |
+| ✅ | [Iterative Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Approach](#iterative-preorder-traversal) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [Iterative Postorder Traversal (Using 2 stacks)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-2-stacks) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [Iterative Postorder Traversal (Using 1 stack)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-1-stack) | [Java Soultion](./src/sde_sheet/.java) |
+| 🔃 | [All Traversals in one code](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Bottom View of Binary Tree](https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1#) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Top View of Binary Tree](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -21,8 +26,8 @@ Problems based on the Tree data structure
 
 | Completion Status | Problems on Trees | Explanation | Solution |
 | --- | --- | --- | --- |
-| 🔃 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Approach](#level-order-traversal) | [Java Soultion](./src/sde_sheet/Level_order_traversal.java) |
+| 🔃 | [Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -75,7 +80,185 @@ Problems based on the Tree data structure
 
 ---
 
-## Trees Introduction
+## In-order traversal
+
+- Inorder traversal is a depth-first traversal type
+- In inorder traversal we follow the `Left - Root - Right` pattern to traverse the nodes of the binary tree
+- So, for each traversal we go to the leftmost node then the root and then the rightmost node
+- If we have a Binary tree of height more than 2, we treat each segment of the left and right of the root of binary tree as subtrees. 
+- Hence until we traverse in-depth at left subtree we won't visit the root and right subtree.
+- Java Code (Recursive)
+```
+	public static void inorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		inorder_traversal(root.left);
+		System.out.print(root.data + " ");
+		inorder_traversal(root.right);
+	}
+```
+
+## Pre-order traversal
+
+- Preorder traversal is a depth-first traversal type
+- In preorder traversal we follow the `Root - Left - Right` pattern to traverse the nodes of the binary tree
+- So, for each traversal we go to the root, then leftmost node then the rightmost node
+- If we have a Binary tree of height more than 2, we treat each segment of the left and right of the root of binary tree as subtrees. 
+- Hence until we traverse the root we won't visit the left subtree and right subtree.
+- Java Code (Recursive)
+```
+	public static void preorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		System.out.print(root.data + " ");
+		preorder_traversal(root.left);
+		preorder_traversal(root.right);
+	}
+```
+
+## Post-order traversal
+
+- Postorder traversal is a depth-first traversal type
+- In postorder traversal we follow the `Left - Right - Root` pattern to traverse the nodes of the binary tree
+- So, for each traversal we go the leftmost node and then the rightmost node only then the root
+- If we have a Binary tree of height more than 2, we treat each segment of the left and right of the root of binary tree as subtrees. 
+- Hence until we traverse in-depth at left subtree and right subtree we won't visit the root.
+- Java Code (Recursive)
+```
+	public static void postorder_traversal(Node root) {
+		if (root == null)
+			return;
+
+		postorder_traversal(root.left);
+		postorder_traversal(root.right);
+		System.out.print(root.data + " ");
+	}
+```
+
+<p>
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Preorder-from-Inorder-and-Postorder-traversals.jpg" alt="Traversal Techniques" width="400px" />
+</p>
+
+---
+
+## Level-order traversal
+
+- Levelorder traversal is a breadth-first traversal type
+- In levelorder traversal we visit each node of the binary tree on a level-wise pattern
+- So, for each traversal we go to each level visiting the nodes from `left to right`
+- Here's a pictorial understanding of all of the above traversals
+
+<p>
+<img src="https://examradar.com/wp-content/uploads/2016/10/pre-post-inorder-and-level-order.png" alt="Traversal Techniques" width="400px" />
+</p>
+
+**Code Explanation**
+
+- To store a given level, we can use **queue** data structure
+- To store level wise order we can use **List of List** data structure where we store a level in a List and store all lists of levels as a list inside this data structure
+- For every level we visit,
+	- we will first insert it into the queue
+	- next, we take the nodes of current level and check its left and right
+	- If left and right exists, we insert the current level of nodes as list inside the answer data structure 
+	- and insert the left and right we checked into the queue data structure
+	- Repeat until left and right is null
+
+**Dry Run**
+
+<img src="assets/Level order traversal dry run.jpg" alt="Level order traversal dry run" width="400px" />
+
+---
+
+## Iterative preorder traversal
+
+- We use **root** variable to store current node
+- Use Arraylist **inorder** to store inorder traversal answer
+- And a Stack **stack** to store left and right of current nodes
+- Insert the root node inside stack first
+- Traversal begins
+	- Pop the top most node and store it in **root** variable
+	- Store the value of **root** inside **inorder** list
+	- Using **root**
+		- check if right of **root** exists and push into stack
+		- check if left of **root** exists and push into stack
+	- Continue traversal until stack is empty
+- Return **inorder** list
+
+**Dry Run**
+
+<img src="assets/Iterative preorder traversal dry run.jpg" alt="Iterative preorder traversal dry run" width="400px" />
+
+---
+
+## Iterative inorder traversal
+
+- We use **node** variable to store current node
+- Use Arraylist **inorder** to store inorder traversal answer
+- And a Stack **stack** to simulate the auxiliary stack trace used in recursion
+- Now the traversal begines
+	- *If* **node** is not null, push to stack and go the left of **node**
+	- *Else* check once whether stack is empty
+	- *Then* if **node** is null, do 2 things
+		- Print answer  (or) insert the current **node**'s value to answer
+		- And go to right of **node**
+	- Repeat the traversal steps until the stack is empty
+- Return answer
+
+**Dry Run**
+
+<img src="assets/Iterative inorder traversal dry run.jpg" alt="Iterative inorder traversal dry run" width="400px" />
+
+---
+
+## Iterative postorder traversal
+
+- There are two approaches to iteratively apply postorder traversal: (1) Using 2 stacks & (2) Using 1 stack
+
+### Using 2 stacks
+
+- Initially insert root in **stack 1**
+- Traversal begins:
+	- Take the topmost node from **stack 1** to insert in **stack 2**
+	- Now, for the topmost node of **stack 2**, insert left and right in to **stack 1**
+- Once **stack 1** is empty, print/return **stack 2* nodes in LIFO order. That's the answer.
+- Observation: 
+	- We try insert root nodes @ **stack 2**
+	- followed by right nodes @ **stack 2**
+	- followed by left nodes @ **stack 2**
+	- In this way we get the correct postorder in **stack 2**
+	- So the **stack 2** takes input in reverse of postorder and outputs correct postorder
+
+**Dry Run**
+
+<img src="assets/Iterative postorder traversal using 2 stacks dry run.jpg" alt="Iterative postorder traversal using 2 stacks dry run" width="400px" />
+
+---
+
+### Using 1 stack
+
+- At first the root is inserted into the **stack**
+- Take a variable **cur** to keep track of left nodes
+- First we traverse to the left-most node and insert every node we visit in the travsersal into the **stack**. Basically we are insert every left node from the left subtree.
+- Next, when we reach the leftmost node, the **cur** will become null
+- Now, create another variable **temp** to keep track of the right nodes
+- Whenever we reach a leaf node:
+	- we pop the top node from **stack** and add it to postorder
+	- Now, we also check whether the popped node (still stored in **temp**) was right node. If yes, we pop the top node from **stack** again and add it postorder. We repeat this step until all root nodes of popped nodes are added to postorder.
+- Return the answer
+
+**Dry Run**
+
+<img src="assets/Iterative postorder traversal using 1 stack dry run 1.jpg" alt="Iterative postorder traversal using 1 stack dry run 1" width="400px" />
+
+<img src="assets/Iterative postorder traversal using 1 stack dry run 2.jpg" alt="Iterative postorder traversal using 1 stack dry run 2" width="400px" />
+
+
+---
+---
+
+## Notes on Tree Data Structure
 
 - Trees are hierarchical data structures, compared with Arrays, Stacks, Queues, Linked lists which are linear data structures
 - A hierarchy can be observed in our folder structure
@@ -85,7 +268,7 @@ Problems based on the Tree data structure
 ### Key terminologies of a tree
 
 <p>
-<img src="https://miro.medium.com/max/975/1*PWJiwTxRdQy8A_Y0hAv5Eg.png" alt="Tree data structure" />
+<img src="https://miro.medium.com/max/975/1*PWJiwTxRdQy8A_Y0hAv5Eg.png" alt="Tree data structure" width="400px" />
 </p>
 
 
@@ -128,117 +311,6 @@ Problems based on the Tree data structure
 <img src="https://examradar.com/wp-content/uploads/2016/10/pre-post-inorder-and-level-order.png" alt="Traversal Techniques" />
 </p>
 <hr />
-
-
-## Pre-order traversal
-
-- Pre-order traversal follows a depth-first search appraoch
-- We visit the nodes in this format **(Root - Left - Right)**
-- Java Code (Recursive)
-```
-	public static void preorder_traversal(Node root) {
-		if (root == null)
-			return;
-
-		System.out.print(root.data + " ");
-		preorder_traversal(root.left);
-		preorder_traversal(root.right);
-	}
-```
-<hr />
-
-
-## In-order traversal
-
-- In-order traversal follows a depth-first search appraoch
-- We visit the nodes in this format **(Left - Root - Right)**
-- Java Code (Recursive)
-```
-	public static void inorder_traversal(Node root) {
-		if (root == null)
-			return;
-
-		inorder_traversal(root.left);
-		System.out.print(root.data + " ");
-		inorder_traversal(root.right);
-	}
-```
-<hr />
-
-
-## Post-order traversal
-
-- Post-order traversal follows a depth-first search appraoch
-- We visit the nodes in this format **(Left - Right - Root)**
-- Java Code (Recursive)
-```
-	public static void postorder_traversal(Node root) {
-		if (root == null)
-			return;
-
-		postorder_traversal(root.left);
-		postorder_traversal(root.right);
-		System.out.print(root.data + " ");
-	}
-```
-
-## Level order traversal
-
-- To store a given level, we can use **queue** data structure
-- To store level wise order we can use **List of List** data structure where we store a level in a List and store all lists of levels as a list inside this data structure
-- For every level we visit,
-	- we will first insert it into the queue
-	- next, we take the nodes of current level and check its left and right
-	- If left and right exists, we insert the current level of nodes as list inside the answer data structure 
-	- and insert the left and right we checked into the queue data structure
-	- Repeat until left and right is null
-
-**Dry Run**
-
-<img src="" alt="Level order traversal dry run" />
-
-## Iterative preorder traversal
-
-- We use **root** variable to store current node
-- Use Arraylist **inorder** to store inorder traversal answer
-- And a Stack **stack** to store left and right of current nodes
-- Insert the root node inside stack first
-- Traversal begins
-	- Pop the top most node and store it in **root** variable
-	- Store the value of **root** inside **inorder** list
-	- Using **root**
-		- check if right of **root** exists and push into stack
-		- check if left of **root** exists and push into stack
-	- Continue traversal until stack is empty
-- Return **inorder** list
-
-**Dry Run**
-
-<img src="" alt="Iterative preorder traversal dry run" />
-
-## Iterative inorder traversal
-
-- We use **node** variable to store current node
-- Use Arraylist **inorder** to store inorder traversal answer
-- And a Stack **stack** to simulate the auxiliary stack trace used in recursion
-- Now the traversal begines
-	- *If* **node** is not null, push to stack and go the left of **node**
-	- *Else* check once whether stack is empty
-	- *Then* if **node** is null, do 2 things
-		- Print answer  (or) insert the current **node**'s value to answer
-		- And go to right of **node**
-	- Repeat the traversal steps until the stack is empty
-- Return answer
-
-**Dry Run**
-
-<img src="" alt="Iterative inorder traversal dry run" />
-
-## Iterative postorder traversal
-
-- 
-
----
 
 ## Types of Trees
 

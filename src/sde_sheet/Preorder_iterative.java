@@ -1,4 +1,4 @@
-package tree_traversals;
+package sde_sheet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,35 +10,31 @@ import tree_implementations.Node;
 /*
  * Time Complexity: O(N)
  * 	where N is the no. of nodes in the tree
- * Space Complexity: O(2N) (size due to usage of 2 stacks)
+ * Space Complexity: O(N)
  * 	where N is the no. of nodes in the tree
  * (don't take the space of answer DS into account)
  */
-public class Postorder_iterative_using_2_stacks {
+public class Preorder_iterative {
 
-	public static List<Integer> postorderTraversal(Node root) {
-		List<Integer> postorder = new ArrayList<Integer>();
-		Stack<Node> stack1 = new Stack<Node>();
-		Stack<Node> stack2 = new Stack<Node>();
+	public static List<Integer> preorderTraversal(Node root) {
+		List<Integer> preorder = new ArrayList<Integer>();
 
 		if (root == null)
-			return postorder;
+			return preorder;
 
-		stack1.push(root);
-		while (!stack1.isEmpty()) {
-			root = stack1.pop();
-			stack2.push(root);
-			if (root.left != null)
-				stack1.push(root.left);
+		Stack<Node> stack = new Stack<Node>();
+		stack.push(root);
+
+		while (!stack.isEmpty()) {
+			root = stack.pop();
+			preorder.add(root.data);
 			if (root.right != null)
-				stack1.push(root.right);
+				stack.push(root.right);
+			if (root.left != null)
+				stack.push(root.left);
 		}
 
-		while (!stack2.isEmpty()) {
-			postorder.add(stack2.pop().data);
-		}
-
-		return postorder;
+		return preorder;
 	}
 
 	static Scanner sc = null;
@@ -49,8 +45,8 @@ public class Postorder_iterative_using_2_stacks {
 
 		Node root = createTree();
 
-		List<Integer> ans = postorderTraversal(root);
-		System.out.print("Post order: ");
+		List<Integer> ans = preorderTraversal(root);
+		System.out.print("Preorder: ");
 		for (int data : ans) {
 			System.out.print(data + ", ");
 		}
@@ -78,5 +74,3 @@ public class Postorder_iterative_using_2_stacks {
 	}
 
 }
-
-// Post order: 4, 5, 2, 8, 7, 6, 3, 1, 
