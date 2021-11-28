@@ -17,7 +17,7 @@ Problems based on the Tree data structure
 | ✅ | [Iterative Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Approach](#iterative-preorder-traversal) | [Java Soultion](./src/sde_sheet/.java) |
 | ✅ | [Iterative Postorder Traversal (Using 2 stacks)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-2-stacks) | [Java Soultion](./src/sde_sheet/.java) |
 | ✅ | [Iterative Postorder Traversal (Using 1 stack)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-1-stack) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [All Traversals in one code](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#) | [Java Soultion](./src/sde_sheet/.java) |
+| 🔃 | [All Traversals in one code](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#preorder-inorder-postorder-traversals-in-one-traversal) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Bottom View of Binary Tree](https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1#) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Top View of Binary Tree](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -253,6 +253,10 @@ Problems based on the Tree data structure
 <img src="assets/Iterative postorder traversal using 1 stack dry run 1.jpg" alt="Iterative postorder traversal using 1 stack dry run 1" width="400px" />
 
 <img src="assets/Iterative postorder traversal using 1 stack dry run 2.jpg" alt="Iterative postorder traversal using 1 stack dry run 2" width="400px" />
+
+## Preorder Inorder Postorder Traversals in One Traversal
+
+- 
 
 
 ---

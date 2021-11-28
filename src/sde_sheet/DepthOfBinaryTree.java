@@ -1,18 +1,18 @@
-package dsa_one;
+package sde_sheet;
 
 import java.util.Scanner;
 
 import tree_implementations.Node;
 
-public class HeightOfBinaryTree {
+public class DepthOfBinaryTree {
 
-	public static int heightOfBinaryTree(Node root) {
+	public static int depthOfBinaryTree(Node root) {
 		if (root == null)
 			return 0;
 
 		// Here we take the maximum height of left subtree and right subtree
 		// Then we add one for counting the root for the height
-		return Math.max(heightOfBinaryTree(root.left), heightOfBinaryTree(root.right)) + 1;
+		return Math.max(depthOfBinaryTree(root.left), depthOfBinaryTree(root.right)) + 1;
 	}
 
 	static Scanner sc = null;
@@ -23,7 +23,7 @@ public class HeightOfBinaryTree {
 
 		Node root = createTree();
 
-		System.out.println("Height of the tree: " + heightOfBinaryTree(root));
+		System.out.println("Height of the tree: " + depthOfBinaryTree(root));
 
 	}
 
