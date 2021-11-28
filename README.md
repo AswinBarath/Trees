@@ -17,7 +17,7 @@ Problems based on the Tree data structure
 | ✅ | [Iterative Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Approach](#iterative-preorder-traversal) | [Java Soultion](./src/sde_sheet/.java) |
 | ✅ | [Iterative Postorder Traversal (Using 2 stacks)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-2-stacks) | [Java Soultion](./src/sde_sheet/.java) |
 | ✅ | [Iterative Postorder Traversal (Using 1 stack)](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#using-1-stack) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [All Traversals in one code](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#preorder-inorder-postorder-traversals-in-one-traversal) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [All Traversals in one code](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Approach](#preorder-inorder-postorder-traversals-in-one-traversal) | [Java Soultion](./src/sde_sheet/PreInPostOrderTraversals.java) |
 | 🔃 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Bottom View of Binary Tree](https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1#) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Top View of Binary Tree](https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -28,7 +28,7 @@ Problems based on the Tree data structure
 | --- | --- | --- | --- |
 | ✅ | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Approach](#level-order-traversal) | [Java Soultion](./src/sde_sheet/Level_order_traversal.java) |
 | 🔃 | [Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
-| 🔃 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
+| ✅ | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Approach](#maximum-depth-of-binary-tree) | [Java Soultion](./src/sde_sheet/DepthOfBinaryTree.java) |
 | 🔃 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
 | 🔃 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Brute, Better & Optimal Approaches](#) | [Java Soultion](./src/sde_sheet/.java) |
@@ -256,7 +256,16 @@ Problems based on the Tree data structure
 
 ## Preorder Inorder Postorder Traversals in One Traversal
 
-- 
+- Here we make use of a stack to keep track of each node along with a number
+- We make use of a Pair class type to pair up node and number
+- Based on the number, we insert each node's value into the preorder/inorder/postorder list
+- After every insertion we update this specific number
+
+## Maximum Depth of Binary Tree
+
+- Depth/Height of Binary tree can be calculated using recursion
+- Here, we can call the depth function recursively for left subtree and right subtree
+- We know that the height of the tree will be the `maximum of left subtree and right subtree + 1` so that we take only the maximum among subtrees and add 1 to include the root element as well
 
 
 ---
